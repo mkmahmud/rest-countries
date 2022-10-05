@@ -1,0 +1,7 @@
+.Home{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    background-color: rgb(0 0 0 /10%);
+    padding: 5px;
+}

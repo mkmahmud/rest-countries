@@ -1,0 +1,17 @@
+.Country{
+    border: 2px solid salmon;
+    height: 200px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.Country h2{
+    font-size: 30px;
+    padding: 5px;
+    background: salmon;
+}
+
+.Country img{
+    height: 150px;
+    padding: 10px;
+}

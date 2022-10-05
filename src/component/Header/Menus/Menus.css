@@ -1,0 +1,18 @@
+.menus{
+    background-color: crimson;
+    margin-top: -15px;
+}
+.menus ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+.menus ul li{
+    list-style: none;
+    padding: 5px;
+}
+
+.menus ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
