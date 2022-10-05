@@ -1,3 +1,4 @@
+import { useState } from "react";
 import {
   createBrowserRouter,
   RouterProvider,
@@ -15,18 +16,27 @@ import Main from "./layout/Main";
 
 
 function App() {
+
+  const [search, setSearch] = useState();
+  const keyPress =(e) => {
+    // console.log(e.target.value)
+    const searchVal = e.target.value;
+    setSearch(searchVal)
+}
+
+// console.log(search)
  
   const router = createBrowserRouter([
     {
       path:'',
-      element: <Main></Main>,
+      element: <Main keyPress={keyPress}></Main>,
       children: [
         {
-          path:'/home',
+          path:'',
           loader: async () => {
             return fetch('https://restcountries.com/v3.1/all');
           },
-          element: <Home></Home>
+          element: <Home data={search}></Home>
         },
         {
           path:'/about',
